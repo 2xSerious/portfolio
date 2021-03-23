@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Webpage</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -26,12 +27,13 @@
     </header>
     <main>
         
-            <div id="about-me">
+            <div class="container a" id="about-me">
                 <h2>About Me</h2>
                 <hr>
                   <div class="paragraph">
-                    <p>I'm full-time manager and I had decided to change my carreer. My passion for coding started
-                        with VBA. I liked the idea of writing a code, which changing the all perspective
+                    <p> I'm Teodor and I'm currently living and working as a full-time manager in UK. I'm enjoying in gym, cars, music, games,
+                        programming, traveling<span id="dots">...</span><span id="more">. I had decided to change my carreer. My passion for coding started
+                        with VBA. I liked the idea of writing code, which is changing the perspective
                         of how the things can get done. Then I had decided that I will start exploring other 
                         languages.Then few years ago did my first free course about coding - the basics HTML and CSS.
                         It was interesting, but it was quite far from the things I want to do. Then I caught up with 
@@ -40,32 +42,45 @@
                         for JavaScript, it was just for few weeks. Then moved to C++, I gave up. I wanted to learn coding,
                         but everything was so confused...I watched few youtube videos and then I realised that I need a lot 
                         of time. And now I'm working only 3 days a week, so I can code. I have a lot of ideas, that I'll turn
-                        into real projects. 
+                        into real projects.</span> 
                     </p>
-                 </div>  
+                 </div> 
+                 <button onclick="myFunc()" id="readBtn">Read more</button> 
             </div>
             
-            <div id="skills">
+            <div class="container b" id="skills">
                 <h2>Skills</h2>
                 <hr>
-                <p>Basic knowledge on:</p>
-                <img src="./images/html.png" alt="html logo">
-                <img src="./images/css.png" alt="css logo">
+                
+                <div class="images">
+                <a href="https://www.google.com/search?q=html" target="_blank"><img src="./images/html.png" alt="html icon"></a>
+                <a href="https://www.google.com/search?q=css" target="_blank"><img src="./images/css.png" alt="css icon"></a>
+                <a href="https://www.google.com/search?q=javascript" target="_blank"><img src="./images/javascript.png" alt="javascript icon"></a>
+                <a href="https://www.google.com/search?q=python" target="_blank"><img src="./images/python.png" alt="python icon"></a>
+                <a href="https://www.google.com/search?q=mysql" target="_blank"><img src="./images/mysql.png" alt="mysql icon"></a>
+                </div>
             </div>
             
-            <div id="projects">
+            <div class="container c" id="projects">
                 <h2>Projects</h2>
                 <hr>
             </div>
             
-            <div id="contact">
+            <div class="container d" id="contact">
                 <h2>Contact</h2>
                 <hr>
+                <div class="contact-icons">
+                    <a href="mailto:kinglite.tk@gmail.com"><img src="./images/gmail.png" alt="gmail icon"></a>
+                    
+                    <a href="https://github.com/2xSerious" target="_blank"><img src="./images/github.png" alt="github icon"></a>
+                    
+                    <a href="www.linkedin.com/in/teodor-krushkov-29516220a" target="_blank"><img src="./images/linkedin.png" alt="linkedin icon"></a>
+                </div>
             </div>
         
         
     </main>
-    <footer></footer>
+    <footer><p>Made by Teodor K. - 2xSerious &#169</p></footer>
  </div>
 </body>
 </html>
